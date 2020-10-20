@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" th:href="@{/css/geral.css}">
 <link rel="stylesheet" type="text/css" th:href="@{/css/bacteria.css}" />
-<!--<script type="text/javascript" th:src="@{/script/background.js}"></script> -->
 
 <title>BioPokedex</title>
 
@@ -56,20 +55,15 @@
 		</section>
 
 	</div>
-	<footer>
-		<div id="rodape"></div>
-	</footer>
+	
 	<script th:inline="javascript">
-	function proximo(id){
-		var idBac = id + 1;
-   		window.location.href = "/bacterias/"+isBac; 
-   	}
+	
 	var tipo = [[${tipo}]];
 
    	if(tipo === "Metal"){
    		document.body.style.backgroundColor = "#f3f3f3";
    	    document.body.style.backgroundImage = "url('../images/metal.png')";
-		document.body.style.backgroundSize = "100% 100%";
+		document.body.style.backgroundSize = "cover";
 		document.body.style.backgroundRepeat = "no-repeat";
    	    document.getElementsByClassName("item")[0].style.backgroundColor = "#A9A9A9";
 		document.getElementsByClassName("item")[1].style.backgroundColor = "#A9A9A9";
@@ -81,7 +75,7 @@
    	if(tipo === "Composto Químico"){
    		document.body.style.backgroundColor = "#f3f3f3";
 	    document.body.style.backgroundImage = "url('../images/compostos-quimicos.png')";
-	    document.body.style.backgroundSize = "100% 100%";
+	    document.body.style.backgroundSize = "cover";
 	    document.body.style.backgroundRepeat = "no-repeat";
 	    document.getElementsByClassName("item")[0].style.backgroundColor = "#DAA520";
 		document.getElementsByClassName("item")[1].style.backgroundColor = "#DAA520";
@@ -92,7 +86,7 @@
    	}  
    	if(tipo === "?"){
    		document.body.style.backgroundColor = "#2E8B57";
-	    document.body.style.backgroundSize = "100% 100%";
+	    document.body.style.backgroundSize = "cover";
 	    document.body.style.backgroundRepeat = "no-repeat";
 	    document.getElementsByClassName("item")[0].style.backgroundColor = "#90EE90";
 		document.getElementsByClassName("item")[1].style.backgroundColor = "#90EE90";
