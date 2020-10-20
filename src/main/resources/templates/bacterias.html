@@ -12,6 +12,7 @@
 </head>
 <body>
 	<div id="container" th:object="${biolixiviador}">
+		<a class="link-voltar" th:href="@{/listar}">Voltar</a>
 		<section id="bacteria">
 			<div class="img">
 				<img class="img"
@@ -23,7 +24,6 @@
 					th:href="@{/bacterias/{id}(id=${proximo.id})}">&#10095;</a>
 			</div>
 			</div>
-			
 		</section>
 		<section id="caracteristicas">
 			<div class="item">
@@ -54,8 +54,6 @@
 				<p th:text="${biolixiviador.info}"></p>
 			</div>
 		</section>
-
-
 
 	</div>
 	<footer>

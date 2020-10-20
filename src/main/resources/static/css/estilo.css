@@ -70,9 +70,15 @@ main{
         width: 290px;
         height: 290px;
     }
+    #container a{
+    	padding: 10px;
+    }
 }
 @media(max-width: 768px){
 	#container h1{
     	font-size: 4rem;
+    }
+    #container a{
+    	padding: 0 10px 0 10px;
     }
 }

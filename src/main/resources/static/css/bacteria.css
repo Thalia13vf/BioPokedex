@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background-size: 100% 100%;
+    position: relative;
 }
 #bacteria .img img{
     width: 280px;
@@ -37,6 +38,15 @@ div .img {
         top: -30px;
     }
 }*/
+.link-voltar{
+	font-size: 2rem;
+	justify-content: flex-end;
+	color: white;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	text-decoration: none;	
+}
 .controles{
 	top: 150px;
 	padding: 10px;
@@ -80,7 +90,6 @@ div .img {
     height: 100%;
 }
 #caracteristicas div{
-    /*background-color: rgb(173, 20, 148);*/
     width:100%;
     height: 65px;
     max-height: auto;
@@ -95,9 +104,9 @@ div .img {
     line-height: 70px;
 }
 #caracteristicas div:nth-child(6){
-    height: 280px;
-    /*background-color: rgb(199, 32, 199);*/
+    height: auto;
     line-height: normal;
+    padding-bottom: 15px;
 }
 
 #caracteristicas div p{
