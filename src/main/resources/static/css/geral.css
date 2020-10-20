@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+
+html{
+    font-size: 65.5%;
+}
+body{
+    font-size: 1.6rem;
+    /*background: linear-gradient(90deg, rgb(162, 247, 166) 0%, rgb(92, 197, 127) 50%, rgb(17, 245, 165) 100%);*/
+}
+

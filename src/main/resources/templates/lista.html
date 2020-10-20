@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link th:href="@{css/lista.css}" rel="stylesheet">
+<link th:href="@{css/geral.css}" rel="stylesheet">
+<title>BioPokedex - Lista de Bacterias</title>
+</head>
+<body>
+	<main id="container">
+	<p><a class="link-referencias" th:href="@{/referencias}">Referencias Bibliográficas</a></p>
+		<h1>BioPokedex</h1>
+		<section id="cards">
+			<div id="card" th:each="biolixiviadores : ${biolixiviadores}">
+				<a th:href="@{/bacterias/{id}(id=${biolixiviadores.id})}">
+					<div id="card-content">
+						<img class= "img" th:src="@{/images/{image}(image=${biolixiviadores.imagem})}">
+						<p th:text="${biolixiviadores.id}" class="id"></p>
+						<h3 th:text="${biolixiviadores.nome}" class="nome"></h3>
+						<h4 th:text="${biolixiviadores.tipo}" class="tipo"></h4>
+					</div>
+				</a>
+			</div>
+		</section>
+	</main>
+	<!--<script src="script/script.js"></script> -->
+</body>
+</html>
